@@ -192,6 +192,7 @@ input:focus-visible::placeholder {
   margin: 10px;
   display: block;
   text-align: center;
+  color: #555555;
 }
 .card__img {
   float: left;
@@ -278,6 +279,74 @@ input:focus-visible::placeholder {
   display: flex;
   gap: 27px;
   align-items: center;
+}
+
+.grid {
+  padding-top: 46px;
+  height: 780px;
+}
+.grid .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 10%);
+  gap: 38px;
+  height: 100%;
+  padding-bottom: 55px;
+}
+.grid__item {
+  background: #F8F8F8;
+  padding: 17px 43px;
+  text-align: center;
+}
+.grid__item-title {
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.grid__item a {
+  color: #000;
+}
+.grid__list {
+  width: 100%;
+}
+.grid__list-item {
+  width: 100%;
+  border-bottom: 1px solid #B9B9B9;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.grid__list-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.more-projects {
+  display: none;
+  padding: 42px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 42px;
+}
+.more-projects__title {
+  margin-bottom: 42px;
+  text-align: center;
+  font-weight: 400;
+}
+.more-projects__block {
+  display: none;
+}
+.more-projects__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 53px;
+  padding-bottom: 45px;
+}
+.more-projects .card {
+  max-width: 290px;
 }
 
 ::-webkit-scrollbar {
